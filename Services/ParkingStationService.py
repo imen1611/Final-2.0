@@ -3,7 +3,6 @@ from Services.UserService import UserService
 from models.ParkingStattionModel import ParkingStationModel
 from bson import json_util
 
-
 class ParkingStationService():
     def getAll(token):
         data, code = UserService.find(token)
