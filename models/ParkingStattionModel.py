@@ -20,7 +20,7 @@ class ParkingStationModel():
         return parkingstation
 
     def updateOne(reference, update):
-        mongo.db.parkingstations.update_one(reference,update)
+      mongo.db.parkingstations.update_one(reference, {"$set": update})
 
     def deleteOne(reference):
         mongo.db.parkingstations.delete_one(reference)
